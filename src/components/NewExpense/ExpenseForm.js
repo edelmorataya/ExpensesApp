@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import './ExpenseForm.css';
 
 const ExpenseForm = () => {
@@ -20,7 +20,7 @@ const ExpenseForm = () => {
     };
 
     const amountChangeHandler = (event) => {
-       setEnteredAmount(event.taget.value);
+       setEnteredAmount(event.target.value);
     //    setUserInput({
     //     ...userInput,
     //     EnteredAmount: event.target.value
@@ -28,7 +28,7 @@ const ExpenseForm = () => {
     };
 
     const dateChangeHandler = (event) => {
-       setEnteredDate(event.taget.value);
+       setEnteredDate(event.target.value);
         // setUserInput({
         //     ...userInput,
         //     enteredDate: event.target.value
